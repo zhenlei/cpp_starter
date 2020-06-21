@@ -1,8 +1,6 @@
-#include <iostream>
 #include <functional>
+#include <iostream>
 
 int main() {
- 
- [out = std::ref(std::cout << "hello")](){out.get() << "world";}();
-
+  [out = std::ref(std::cout << "hello")]() { out.get() << "leo"; }();
 }
